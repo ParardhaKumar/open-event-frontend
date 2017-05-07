@@ -1,0 +1,26 @@
+<form class="ui large form">
+  <div class="fields">
+    <div class="six wide field" style="padding-left:0px; padding-right:0px">
+      {{input value="Search for events"}}
+    </div>
+    <div class="four wide field" style="padding-left:0px; padding-right:0px">
+      {{input placeholder="Location" value="United States"}}
+    </div>
+    <div class="four wide field" style="padding-left:0px; padding-right:0px; height:4em">
+      <select class="form-control input-lg" style="height:43px">
+        <option>{{t 'All Dates'}}</option>
+        <option>{{t 'Today'}}</option>
+        <option>{{t 'Tomorrow'}}</option>
+        <option>{{t 'This Week'}}</option>
+        <option>{{t 'This Weekend'}}</option>
+        <option>{{t 'Next Week'}}</option>
+        <option>{{t 'This Month'}}</option>
+      </select>
+    </div>
+    <div class="two wide field" style="padding-left:0px; padding-right:0px padding-bottom:0px padding-top:0px">
+      <button class="fluid large ui blue button" type="submit">{{t 'Search'}}</button>
+    </div>
+  </div>
+</form>
+
+{{yield}}
